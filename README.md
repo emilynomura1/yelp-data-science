@@ -1,9 +1,10 @@
 # Yelp Data Science Project
 
-This project is a reproducible data science project that utilizes user data of anyone with a Yelp account.
+This project is a reproducible data science project that analyzes account data of anyone with a Yelp account.
 
-To download your user data
+To download your data:
 1. Sign into Yelp
 2. Navigate to *Profile > Account Settings > Privacy Settings*
 3. Click "Download a copy of your Yelp data"
-Unzip the `Yelp.zip` file, and move the relevant `.html` files into the `data` folder of your repository.
+
+For privacy purposes, I have not included any of my personal Yelp account data. Thus, to reproduce this project, you must move the relevant HTML files into a `data` folder in the root directory of your repository.

@@ -1,3 +1,4 @@
+# Load packages
 import pandas as pd
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud, ImageColorGenerator
@@ -6,7 +7,7 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
-# Generate word cloud from a review
+# Generate wordcloud from a review
 stop_words = set(stopwords.words('english'))
 def get_wordcloud(review, fig_name):
     word_tokens = word_tokenize(review)

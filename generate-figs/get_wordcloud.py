@@ -1,6 +1,8 @@
+# Load packages
 import pandas as pd
 from wordcloud_func import get_wordcloud
 
+# Load data
 reviews = pd.read_pickle("../data/user_review.pkl")
 search = pd.read_pickle("../data/search.pkl")
 

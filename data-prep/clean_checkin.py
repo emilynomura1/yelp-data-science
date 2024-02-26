@@ -8,7 +8,7 @@ check_in_df = check_in[0]
 
 # Clean data
 check_in_df["Date"] = pd.to_datetime(check_in_df["Date"])
-check_in_df = check_in_df.drop(columns=['Comment', 'Status'])
+check_in_df = check_in_df.drop(columns=["Comment", "Status"])
 
 # Save new data
 check_in_df.to_pickle("../data/check_in.pkl")

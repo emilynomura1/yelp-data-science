@@ -18,7 +18,7 @@ def get_wordcloud(review, fig_name):
                           max_words=50, 
                           stopwords=stop_words, 
                           colormap='Blues').generate_from_text(sentence)
-    fig_path = '../figures/' + fig_name + '_wordcloud.png'
+    fig_path = "../figures/" + fig_name + "_wordcloud.png"
     plt.imshow(wordcloud)
     plt.axis('off')
     plt.savefig(fig_path, bbox_inches='tight')

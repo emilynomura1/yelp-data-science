@@ -13,8 +13,8 @@ reviews["Geocode"] = reviews["Business Name"].apply(location.geocode)
 reviews.dropna(inplace=True)
 
 # Extract coordinates
-reviews['Latitude'] = [g.latitude for g in reviews["Geocode"]]
-reviews['Longitude'] = [g.longitude for g in reviews["Geocode"]]
+reviews["Latitude"] = [g.latitude for g in reviews["Geocode"]]
+reviews["Longitude"] = [g.longitude for g in reviews["Geocode"]]
 
 # Save new data
 reviews.to_pickle("../data/reviews_geocoded.pkl")

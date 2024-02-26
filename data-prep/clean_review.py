@@ -8,7 +8,7 @@ reviews_df = reviews[0]
 
 # Clean data
 reviews_df["Date"] = pd.to_datetime(reviews_df["Date"])
-reviews_df = reviews_df.drop(columns=['IP Address','Status'])
+reviews_df = reviews_df.drop(columns=["IP Address","Status"])
 
 # Save new data
 reviews_df.to_pickle("../data/user_review.pkl")

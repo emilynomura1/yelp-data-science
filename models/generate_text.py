@@ -46,16 +46,16 @@ class GPT2_Model(GPT2PreTrainedModel):
 
 class ProcessedData(torch.utils.data.Dataset):
 
-  def __init__(self, input_data, tokenizer, gpt2_type="gpt2", max_length=300):
+    def __init__(self, input_data, tokenizer, gpt2_type="gpt2", max_length=300):
 
-    self.texts = [tokenizer(data, truncation=True, max_length=max_length, padding="max_length", return_tensors="pt")
+        self.texts = [tokenizer(data, truncation=True, max_length=max_length, padding="max_length", return_tensors="pt")
                     for data in input_data]
 
-  def __len__(self):
-    return len(self.texts)
+    def __len__(self):
+        return len(self.texts)
 
-  def __getitem__(self, idx):
-    return self.texts[idx]
+    def __getitem__(self, idx):
+        return self.texts[idx]
 
 ######################################################################
 
